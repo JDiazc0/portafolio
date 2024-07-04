@@ -1,4 +1,5 @@
 import React from "react";
+import "../utils/styles/section.css";
 
 export default function Section(props) {
   const { title, children } = props;
