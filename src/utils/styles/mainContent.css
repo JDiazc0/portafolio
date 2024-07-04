@@ -1,0 +1,57 @@
+.aboutMe-content {
+  font-weight: 300;
+}
+
+.aboutMe-content strong {
+  color: var(--secondary-color);
+}
+
+.main-skill h3,
+.additional-skill h3 {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 5px 10px;
+}
+
+.main-skill img,
+.additional-skill img,
+.project-technology img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: var(--primary-light-10);
+  border-radius: 5px;
+  box-shadow: 0 0 15px -8px rgba(255, 255, 255, 0.2);
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+
+.project-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.project-technology {
+  display: flex;
+}
+
+.project-link img {
+  height: 120px;
+  width: 240px;
+  border-radius: 5px;
+}
+
+.project-link a {
+  text-decoration: none;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
