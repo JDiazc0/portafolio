@@ -10,13 +10,12 @@ export default function MainContent() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log("env", process.env.K_S_I);
     emailjs
       .sendForm(
-        process.env.K_S_I,
-        process.env.K_T_I,
+        process.env.REACT_APP_PORTFOLIO_SERVICE,
+        process.env.REACT_APP_PORTFOLIO_TEMPLATE,
         form.current,
-        process.env.K_U_P
+        process.env.REACT_APP_PORTFOLIO_USER
       )
       .then(
         () => {
