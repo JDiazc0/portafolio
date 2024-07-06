@@ -10,6 +10,7 @@ export default function MainContent() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    console.log(process.env.K_S_I);
     emailjs
       .sendForm(
         process.env.K_S_I,
