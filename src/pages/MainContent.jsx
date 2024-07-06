@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import Section from "../components/Section";
 import icon from "../utils/scripts/icons";
 import "../utils/styles/mainContent.css";
+import emailjs from "@emailjs/browser";
 
 export default function MainContent() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
+  };
+
   const sections = [
     {
       title: "About Me",
@@ -94,23 +117,28 @@ export default function MainContent() {
       code: (
         <>
           <div className="section-form">
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <div className="name">
-                <input type="text" required />
+                <input type="text" name="name" required />
                 <label className="name-form">Name</label>
               </div>
               <div className="email">
-                <input type="text" required />
+                <input type="text" name="email" required />
                 <label htmlFor="" className="email-form">
                   E-mail
                 </label>
               </div>
               <div className="message">
-                <textarea className="message-textarea"></textarea>
+                <textarea
+                  className="message-textarea"
+                  name="message"
+                  required></textarea>
                 <label className="message-form">Message</label>
               </div>
               <div className="buttons-form">
-                <button className="btn btn-submit">Contact</button>
+                <button type="submit" className="btn btn-submit">
+                  Contact
+                </button>
               </div>
             </form>
           </div>
