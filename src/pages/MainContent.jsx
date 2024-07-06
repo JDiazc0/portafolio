@@ -12,10 +12,10 @@ export default function MainContent() {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        process.env.K_S_I,
+        process.env.K_T_I,
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        process.env.K_U_P
       )
       .then(
         () => {
