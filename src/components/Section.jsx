@@ -6,7 +6,7 @@ export default function Section(props) {
 
   return (
     <>
-      <section className="section-info">
+      <section className={`section-info`}>
         <h3 className="title-section">{title}</h3>
         <hr />
         <div className="content-section">{children}</div>
