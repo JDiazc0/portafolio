@@ -16,3 +16,10 @@
 .content-section {
   margin: 10px 0;
 }
+
+/* Media query for responsive layout */
+@media (max-width: 1500px) {
+  .section-info {
+    width: 100%;
+  }
+}

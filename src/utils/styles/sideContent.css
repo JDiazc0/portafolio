@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: start;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .side-content img {
@@ -13,6 +14,7 @@
   border: 5px solid var(--primary-dark-10);
   box-shadow: 6px 7px 36px -20px rgba(0, 0, 0, 0.8);
 }
+
 .side-title {
   margin: 10px;
   font-size: 45px;
@@ -68,4 +70,25 @@
 
 .btn-side:active {
   transform: scale(0.98);
+}
+
+@media (max-width: 1500px) {
+  .side-content {
+    height: auto;
+    align-items: center;
+    text-align: center;
+    overflow-y: visible;
+  }
+
+  .side-content img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+    border: 5px solid var(--primary-dark-10);
+    box-shadow: 6px 7px 36px -20px rgba(0, 0, 0, 0.8);
+  }
+
+  .side-content p {
+    display: none;
+  }
 }
