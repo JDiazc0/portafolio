@@ -1,11 +1,32 @@
-import React, { useRef } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import Section from "../components/Section";
 import icon from "../utils/scripts/icons";
-import "../utils/styles/mainContent.css";
 import emailjs from "@emailjs/browser";
+import ToastNotification from "../components/ToastNotification";
+import "../utils/styles/mainContent.css";
 
 export default function MainContent() {
   const form = useRef();
+  const [notifications, setNotifications] = useState([]);
+
+  const createNotification = (message = "Notification", type = "info") => {
+    const newNotification = {
+      id: Date.now(),
+      message,
+      type,
+    };
+    setNotifications((prev) => [...prev, newNotification]);
+  };
+
+  const removeNotification = useCallback((id) => {
+    setNotifications((prev) => prev.filter((notif) => notif.id !== id));
+  }, []);
+
+  const clearForm = () => {
+    if (form.current) {
+      form.current.reset();
+    }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,10 +40,11 @@ export default function MainContent() {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
+          createNotification("Message Sended!", "success");
+          clearForm();
         },
         (error) => {
-          console.log("FAILED...", error);
+          createNotification("Something was happend! :(", "error");
         }
       );
   };
@@ -148,10 +170,16 @@ export default function MainContent() {
   ];
 
   return (
-    <div className="main-content">
-      {sections.map((section, index) => (
-        <Section key={index} title={section.title} children={section.code} />
-      ))}
-    </div>
+    <>
+      <div className="main-content">
+        {sections.map((section, index) => (
+          <Section key={index} title={section.title} children={section.code} />
+        ))}
+      </div>
+      <ToastNotification
+        notifications={notifications}
+        removeNotification={removeNotification}
+      />
+    </>
   );
 }
