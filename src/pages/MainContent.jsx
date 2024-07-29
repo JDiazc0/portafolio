@@ -81,6 +81,7 @@ export default function MainContent() {
               <img src={icon.cssLogo} alt="CSS3" title="CSS3" />
               <img src={icon.jsLogo} alt="JavaScript" title="JavaScript" />
               <img src={icon.vueLogo} alt="Vue.js" title="Vue.js" />
+              <img src={icon.viteLogo} alt="Vitejs" title="Vitejs" />
               <img src={icon.reactLogo} alt="React" title="React" />
               <img src={icon.nodeLogo} alt="Node.js" title="Node.js" />
               <img src={icon.firebaseLogo} alt="Firebase" title="Firebase" />
@@ -91,7 +92,8 @@ export default function MainContent() {
                 src={icon.materialLogo}
                 alt="Material-UI"
                 title="Material-UI"
-              />
+              />{" "}
+              <img src={icon.tailwindLogo} alt="Tailwind" title="Tailwind" />
             </div>
           </div>
           <div className="additional-skill">
@@ -118,16 +120,31 @@ export default function MainContent() {
         <>
           <div className="section-projects">
             <div className="project">
-              <div className="project-link">
-                <img src={icon.mineSweeperScreen} alt="" />
-                <a href="https://minesweeper-jdiazc0.netlify.app/">
-                  MineSweeper
-                </a>
-              </div>
+              <a href="https://minesweeper-jdiazc0.netlify.app/">
+                <div className="project-link">
+                  <img src={icon.mineSweeperScreen} alt="" />
+                  <p>MineSweeper</p>
+                </div>
+              </a>
               <div className="project-technology">
                 <img src={icon.reactLogo} alt="" />
                 <img src={icon.cssLogo} alt="" />
                 <img src={icon.jsLogo} alt="" />
+              </div>
+            </div>
+            <hr className="dashed" />
+            <div className="project">
+              <a href="https://landing-page-jdiazc0.netlify.app">
+                <div className="project-link">
+                  <img src={icon.landingPageScreen} alt="" />
+                  <p>Landing page</p>
+                </div>
+              </a>
+              <div className="project-technology">
+                <img src={icon.reactLogo} alt="" />
+                <img src={icon.viteLogo} alt="" />
+                <img src={icon.tailwindLogo} alt="" />
+                <img src={icon.tsLogo} alt="" />
               </div>
             </div>
           </div>
