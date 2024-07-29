@@ -18,7 +18,10 @@ import notionLogo from "../img/notion-original.svg";
 import dockerLogo from "../img/docker-original.svg";
 import postmanLogo from "../img/postman-original.svg";
 import profilePhoto from "../img/JDiazc0.jpeg";
+import tailwindLogo from "../img/tailwindcss-original.svg";
+import viteLogo from "../img/vitejs-plain.svg";
 import mineSweeperScreen from "../img/mine_sweeper.jpeg";
+import landingPageScreen from "../img/landingpage.jpeg";
 
 const icon = {
   htmlLogo,
@@ -41,7 +44,10 @@ const icon = {
   dockerLogo,
   postmanLogo,
   profilePhoto,
+  tailwindLogo,
+  viteLogo,
   mineSweeperScreen,
+  landingPageScreen,
 };
 
 export default icon;
