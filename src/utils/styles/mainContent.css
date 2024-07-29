@@ -58,12 +58,24 @@
   border-radius: 5px;
 }
 
-.project-link a {
+.project-link p,
+a {
   text-decoration: none;
   font-family: inherit;
   color: white;
   cursor: pointer;
   font-size: 25px;
+}
+
+.dashed {
+  border-image: repeating-linear-gradient(
+      to right,
+      white,
+      white 10px,
+      transparent 10px,
+      transparent 20px
+    )
+    1;
 }
 
 .section-form {
