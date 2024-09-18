@@ -135,7 +135,10 @@ export default function MainContent() {
               <a href="https://github.com/JDiazc0/virtual-market-backend/blob/main/README.md">
                 <div className="project-link">
                   <img src={icon.virtualMarketScreen} alt="" />
-                  <p>Virtual Market (Backend)</p>
+                  <p>
+                    Virtual Market <br />
+                    (Backend)
+                  </p>
                 </div>
               </a>
               <div className="project-technology">
