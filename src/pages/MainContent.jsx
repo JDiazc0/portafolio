@@ -54,19 +54,13 @@ export default function MainContent() {
       title: "About Me",
       code: (
         <p className="aboutMe-content">
-          A passionate <strong>Full-Stack Developer</strong> with a keen
-          interest in <strong>UX/UI </strong> design. With a strong foundation
-          in both <strong>front-end</strong> and <strong>back-end </strong>
-          technologies. <br />
-          Throughout my career, I've honed my skills in JavaScript, React,
-          Node.js, and various other modern web technologies. I'm always eager
-          to learn new things and take on challenging projects that push the
-          boundaries of what's possible in web development. <br />
-          In my free time, I immerse myself in the constant search for
-          knowledge, enjoy cycling and find peace in the contemplation of
-          sunsets in the company of my loyal pet. I firmly believe that this
-          personal harmony is essential to tackle projects in an efficient and
-          orderly manner.
+          As a <strong>full-stack</strong> developer, I am passionate about
+          finding innovative solutions, especially in the{" "}
+          <strong>backend</strong> and in the field of{" "}
+          <strong>machine learning</strong>. Although I work on both{" "}
+          <strong>front-end</strong>
+          and <strong>back-end</strong>, what really drives me is the ability to
+          create intelligent models and optimise systems.
         </p>
       ),
     },
@@ -75,41 +69,25 @@ export default function MainContent() {
       code: (
         <>
           <div className="section-skills">
-            <div className="main-skill">
-              <h3>Main Skill</h3>
-              <img src={icon.htmlLogo} alt="HTML5" title="HTML5" />
-              <img src={icon.cssLogo} alt="CSS3" title="CSS3" />
-              <img src={icon.jsLogo} alt="JavaScript" title="JavaScript" />
-              <img src={icon.vueLogo} alt="Vue.js" title="Vue.js" />
-              <img src={icon.viteLogo} alt="Vitejs" title="Vitejs" />
-              <img src={icon.reactLogo} alt="React" title="React" />
-              <img src={icon.nodeLogo} alt="Node.js" title="Node.js" />
-              <img src={icon.firebaseLogo} alt="Firebase" title="Firebase" />
+            <div className="backend-skill">
+              <h3>Back-end Skills</h3>
+              <img src={icon.laravelLogo} alt="Laravel" title="Laravel" />
+              <img src={icon.phpLogo} alt="PHP" title="PHP" />
+              <img src={icon.nodeLogo} alt="Node.Js" title="Node.Js" />
+              <img src={icon.csharpLogo} alt="CSharp" title="CSharp" />
               <img src={icon.mongoLogo} alt="MongoDB" title="MongoDB" />
               <img src={icon.mysqlLogo} alt="MySQL" title="MySQL" />
-              <img src={icon.figmaLogo} alt="Figma" title="Figma" />
-              <img
-                src={icon.materialLogo}
-                alt="Material-UI"
-                title="Material-UI"
-              />{" "}
-              <img src={icon.tailwindLogo} alt="Tailwind" title="Tailwind" />
+              <img src={icon.postmanLogo} alt="Postman" title="Postman" />
+              <img src={icon.insomniaLogo} alt="Insomnia" title="Insomnia" />
             </div>
           </div>
-          <div className="additional-skill">
-            <h3>Additional Skill</h3>
+          <div className="frontend-skill">
+            <h3>Front-end Skills</h3>
+            <img src={icon.reactLogo} alt="React" title="React" />
             <img src={icon.angularLogo} alt="Angular" title="Angular" />
-            <img
-              src={icon.androidLogo}
-              alt="Android Studio"
-              title="Android Studio"
-            />
-            <img src={icon.flutterLogo} alt="Flutter" title="Flutter" />
+            <img src={icon.jsLogo} alt="JavaScript" title="JavaScript" />
             <img src={icon.tsLogo} alt="TypeScript" title="TypeScript" />
-            <img src={icon.trelloLogo} alt="Trello" title="Trello" />
-            <img src={icon.notionLogo} alt="Notion" title="Notion" />
-            <img src={icon.dockerLogo} alt="Docker" title="Docker" />
-            <img src={icon.postmanLogo} alt="Postman" title="Postman" />
+            <img src={icon.figmaLogo} alt="Figma" title="Figma" />
           </div>
         </>
       ),
@@ -130,6 +108,9 @@ export default function MainContent() {
                 <img src={icon.reactLogo} alt="" />
                 <img src={icon.cssLogo} alt="" />
                 <img src={icon.jsLogo} alt="" />
+                <a href="https://github.com/JDiazc0/mine_sweeper">
+                  <img src={icon.githubLogo} alt="" />
+                </a>
               </div>
             </div>
             <hr className="dashed" />
@@ -142,9 +123,28 @@ export default function MainContent() {
               </a>
               <div className="project-technology">
                 <img src={icon.reactLogo} alt="" />
-                <img src={icon.viteLogo} alt="" />
                 <img src={icon.tailwindLogo} alt="" />
                 <img src={icon.tsLogo} alt="" />
+                <a href="https://github.com/JDiazc0/landingpage_mrdogkat">
+                  <img src={icon.githubLogo} alt="" />
+                </a>
+              </div>
+            </div>
+            <hr className="dashed" />
+            <div className="project">
+              <a href="https://github.com/JDiazc0/virtual-market-backend/blob/main/README.md">
+                <div className="project-link">
+                  <img src={icon.virtualMarketScreen} alt="" />
+                  <p>Virtual Market (Backend)</p>
+                </div>
+              </a>
+              <div className="project-technology">
+                <img src={icon.laravelLogo} alt="" />
+                <img src={icon.phpLogo} alt="" />
+                <img src={icon.mysqlLogo} alt="" />
+                <a href="https://github.com/JDiazc0/virtual-market-backend">
+                  <img src={icon.githubLogo} alt="" />
+                </a>
               </div>
             </div>
           </div>

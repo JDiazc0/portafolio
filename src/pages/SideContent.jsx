@@ -12,13 +12,7 @@ export default function SideContent() {
           Hello, I'm <strong>Jhoan Diaz</strong>
           <br /> Fullstack developer
         </h1>
-        <p>
-          A passionate Full-Stack Developer with a keen interest in UX/UI
-          design. With a strong foundation in both front-end and back-end
-          technologies, I bring a holistic approach to development, ensuring
-          that every project I work on is not only functional but also
-          aesthetically pleasing.
-        </p>
+        <p>I'm not a machine learning, but I love machine learning.</p>
         <div className="btn-side-container">
           <a href={cv_Jhoan_Diaz} download="cv_Jhoan_Diaz.pdf">
             <button className="btn-side">Download CV</button>

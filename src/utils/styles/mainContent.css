@@ -16,15 +16,15 @@
   color: var(--secondary-color);
 }
 
-.main-skill h3,
-.additional-skill h3 {
+.backend-skill h3,
+.frontend-skill h3 {
   font-weight: 300;
   font-size: 15px;
   margin: 5px 10px;
 }
 
-.main-skill img,
-.additional-skill img,
+.backend-skill img,
+.frontend-skill img,
 .project-technology img {
   width: 40px;
   height: 40px;
@@ -50,6 +50,10 @@
 
 .project-technology {
   display: flex;
+}
+
+.project-technology a {
+  margin: 0 200px;
 }
 
 .project-link img {
@@ -147,5 +151,14 @@ a {
     height: auto;
     padding: 10px;
     overflow-y: visible;
+  }
+
+  .project-technology a {
+    margin: 0;
+  }
+
+  .project-link {
+    display: flex;
+    flex-direction: column;
   }
 }

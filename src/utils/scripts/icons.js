@@ -1,53 +1,45 @@
-import htmlLogo from "../img/html5-original.svg";
 import cssLogo from "../img/css3-original.svg";
 import jsLogo from "../img/javascript-original.svg";
-import vueLogo from "../img/vuejs-original.svg";
 import reactLogo from "../img/react-original.svg";
 import nodeLogo from "../img/nodejs-original.svg";
-import firebaseLogo from "../img/firebase-original.svg";
 import mongoLogo from "../img/mongodb-original.svg";
 import mysqlLogo from "../img/mysql-original.svg";
 import figmaLogo from "../img/figma-original.svg";
-import materialLogo from "../img/materialui-original.svg";
 import angularLogo from "../img/angular-original.svg";
-import androidLogo from "../img/androidstudio-original.svg";
-import flutterLogo from "../img/flutter-original.svg";
 import tsLogo from "../img/typescript-original.svg";
-import trelloLogo from "../img/trello-original.svg";
-import notionLogo from "../img/notion-original.svg";
-import dockerLogo from "../img/docker-original.svg";
 import postmanLogo from "../img/postman-original.svg";
+import insomniaLogo from "../img/insomnia-original.svg";
 import profilePhoto from "../img/JDiazc0.jpeg";
 import tailwindLogo from "../img/tailwindcss-original.svg";
-import viteLogo from "../img/vitejs-plain.svg";
+import laravelLogo from "../img/laravel-original.svg";
+import csharpLogo from "../img/csharp-original.svg";
+import phpLogo from "../img/php-original.svg";
+import githubLogo from "../img/github-original.svg";
 import mineSweeperScreen from "../img/mine_sweeper.jpeg";
 import landingPageScreen from "../img/landingpage.jpeg";
+import virtualMarketScreen from "../img/VirtualMarketBackend.png";
 
 const icon = {
-  htmlLogo,
-  cssLogo,
   jsLogo,
-  vueLogo,
   reactLogo,
   nodeLogo,
-  firebaseLogo,
   mongoLogo,
   mysqlLogo,
   figmaLogo,
-  materialLogo,
   angularLogo,
-  androidLogo,
-  flutterLogo,
   tsLogo,
-  trelloLogo,
-  notionLogo,
-  dockerLogo,
+  cssLogo,
   postmanLogo,
+  insomniaLogo,
   profilePhoto,
   tailwindLogo,
-  viteLogo,
+  laravelLogo,
+  csharpLogo,
+  phpLogo,
+  githubLogo,
   mineSweeperScreen,
   landingPageScreen,
+  virtualMarketScreen,
 };
 
 export default icon;
